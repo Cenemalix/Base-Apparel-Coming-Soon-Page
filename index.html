@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include CSS style -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+        <div class="block-items">
+            <div class="title">
+                <h1><span>We're</span></h1>
+                <h1> coming soon</h1>
+            </div>
+
+            <div class="text">
+                <p>Hello fellow shoppers! We're currently building our new fashion store.
+                    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            </div>
+
+            <form action="#" id="inputForm" class="input-code">
+                <label for="email" id="errorIcon"><img
+                        src="/FrontEndMentor/base-apparel-coming-soon-master/images/icon-error.svg" alt=""></label>
+                <input type="email" id="input" name="email" placeholder="Email Address">
+                <button type="submit"><img src="/FrontEndMentor/base-apparel-coming-soon-master/images/icon-arrow.svg"
+                        alt="Submit button"></button>
+            </form>
+            <label for="email"><span id="errorSpan">Please Provide a valid email</span></label>
+        </div>
+
+        <div class="loadingModule">
+            <p>Logging in</p>
+        </div>
+
+        <div class="images">
+            <div class="desktopImage">
+                <img src="/FrontEndMentor/base-apparel-coming-soon-master/images/hero-desktop.jpg" alt="Desktop Image">
+            </div>
+
+            <div class="mobileImage">
+                <img src="/FrontEndMentor/base-apparel-coming-soon-master/images/hero-mobile.jpg" alt="Mobile Image">
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Nemanja Celic</a>.
+        </p>
+    </footer>
+    <!-- Include JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('/FrontEndMentor/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    align-items: left;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+}
+
+span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+}
+
+.block-items {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 70%;
+    margin-left: 100px;
+}
+
+.text {
+    text-align: left;
+    display: flex;
+    align-items: left;
+    width: 55%;
+}
+
+img {
+    height: 100%;
+}
+
+.mobileImage {
+    display: none;
+}
+
+input {
+    font-size: 15px;
+    padding: 14px;
+    border: .1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    width: 50%;
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+button {
+    font-size: 15px;
+    border: .1px solid;
+    border-color: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    width: 115px;
+    margin-left: -50px;
+    cursor: pointer;
+    height: 3.7em;
+    transition: background .5s;
+}
+
+.input-code {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100%;
+}
+
+button:hover {
+    background: hsl(2, 40%, 60%);
+}
+
+#errorSpan {
+    font-size: 12px;
+    display: none
+}
+
+#errorIcon {
+    padding: 10px;
+    display: none;
+}
+
+.loadingModule {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 150px;
+    margin-bottom: 20em;
+    border: 16px solid inherit;
+    border-top: 16px solid #3498db;
+    border-bottom: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loadingModule p {
+    color: black;
+    position: sticky;
+    font-weight: 800;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        font-size: 10px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1150px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .block-items {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: auto;
+        font-size: 45px;
+        letter-spacing: 8px;
+        line-height: 55px;
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 38px;
+        margin: auto;
+    }
+
+    .desktopImage {
+        display: none;
+    }
+
+    .mobileImage {
+        display: grid;
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    .text {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        width: 60%;
+    }
+}
